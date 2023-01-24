@@ -1,0 +1,45 @@
+    <nav class="navbar">
+            <div class="alinhamento">
+              <div class="esquerda">
+                <div id="openMenu"<span class="material-symbols-outlined"> menu </span></div>
+              </div>
+
+              <div class="pesquisaheader">
+                <input type="search" placeholder="Tente digitar um nickname"></input>
+                </div>
+
+              <div class="direita">
+                <img class="avatar" src="https://avatar.blet.in/Drons&action=std&direction=3&head_direction=3&img_format=png&gesture=sml&headonly=0&size=b&dance=0&frame_num=0&effect=0" />
+                <a><span class="material-symbols-outlined"> notifications </span></a>
+              </div>
+            </div>
+            </nav>
+
+  <div class="sidebar isOpen">
+
+  <div class="titulomenu"><img src="assets/logo2.png"/>
+  <br>
+  <a>CCTSystem, v1</a></div>
+
+    <ul class="nav">
+      <li><span class="material-symbols-outlined">home</span> Início</li>
+      <li><span class="material-symbols-outlined">account_balance</span> Setor Judiciário <span class="material-symbols-outlined rt">expand_more</span></li>
+      <li><span class="material-symbols-outlined">playlist_add</span> Formulários <span class="material-symbols-outlined rt">expand_more</span></li>
+      <li><span class="material-symbols-outlined">clear_all</span> Listagens <span class="material-symbols-outlined rt">expand_more</span></li>
+      <li><span class="material-symbols-outlined">library_books</span> Apostilas</li>
+    </ul> 
+  </div>
+
+  <div class="fechaMenu isClose"></div>
+
+<script>document.querySelector('#openMenu').addEventListener('click', () => {
+  document.querySelector('.sidebar').classList.toggle('isOpen');
+  document.querySelector('.fechaMenu').classList.toggle('isClose');
+});
+
+
+document.querySelector('.fechaMenu').addEventListener('click', () => {
+  document.querySelector('.sidebar').classList.toggle('isOpen');
+  document.querySelector('.fechaMenu').classList.toggle('isClose');
+});</script>
+
